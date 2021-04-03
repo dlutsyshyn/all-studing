@@ -1,0 +1,15 @@
+html {
+    background: white;
+}
+
+.image {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.image:hover {
+    cursor: pointer;
+    transform: rotate(-30deg);
+}

@@ -1,0 +1,27 @@
+.superwrap {
+    display: block;
+    width: 95%;
+    border: red solid;
+    border-top-left-radius: 100% 20px; 
+    border-bottom-right-radius: 100% 20px;
+    padding: 10px 10px 10px;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+.photowrap {
+    float: left;
+    border-radius: 20%;
+    margin: 10px 10px 10px;
+}
+
+@media print {
+    .photowrap {
+    float: none;
+    margin: 10px 250px auto;
+    margin-bottom: 0;
+    width: 140px;
+}
+}

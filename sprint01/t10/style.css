@@ -1,0 +1,47 @@
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 25px;
+  }
+  
+  a::before {
+    padding-right: 16px;
+  }
+  
+  a[href^='https://']::before {
+    content: '\00bb';
+  }
+  
+  a[href*='://www.'] {
+    color: green;
+  }
+  
+  a[target='_blank']::after {
+    content: ' \21d2';
+  }
+  
+  a[target='_blank']::after,
+  a[href$='/a']:hover::after {
+    color: coral;
+  }
+  
+  a[href$='/a']:hover::after {
+    content: " \2026  last symbol is 'a'";
+    font-style: italic;
+  }
+  
+  a[href^='http://']::before {
+    color: red;
+    content: '\00d7';
+  }

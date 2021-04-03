@@ -1,0 +1,142 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.heading {
+    padding: 10px;
+    color: rgb(245, 115, 139);
+}
+
+.heading2 {
+    color: rgb(109, 109, 109);
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0px 2px 5px;
+}
+
+.firstrow {
+    margin: 5px;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(109, 109, 109);
+    font-size: 17px;
+}
+
+.jobtextarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.jobdet {
+    border-bottom: 2px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    width: 100%;
+    position: relative;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.namefield,
+.emailfield {
+    border-bottom: 2px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    width: 49%;
+    position: relative;
+    display: block;
+    justify-content: center;
+}
+
+.butsend {
+    padding: 7px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+    background-color: rgba(245, 115, 139, 0.899);
+    color: rgb(109, 109, 109);
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.butsend:hover {
+    transition: ease-in-out 1.2s;
+    background: rgba(83, 0, 143, 0.81);
+    color: seashell;
+}
+
+.firstrow input[type="checkbox"] {
+    opacity: 0;
+    z-index: 0;
+}
+
+.butt:hover {
+    background:rgba(245, 115, 139, 0.509);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 5px;
+}
+
+.check input[type="checkbox"]:checked + .butt{
+    cursor: pointer;
+    background: red;
+}
+
+.butt {
+    position: relative;
+    width: 255px;
+    height: 40px;
+    padding-top: 7px;
+    margin: 5px;
+    border: rgb(109, 109, 109) 2px solid;
+    border-radius: 100px;
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.firstrow input[type="checkbox"]:checked + .butt {
+    transition: 0.3s ease-in-out;
+    background: rgba(83, 0, 143, 0.81);
+    color: white;
+}
+
+.firstrow input[type="checkbox"]:checked + .butt:after {
+    content: "\2713";
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
